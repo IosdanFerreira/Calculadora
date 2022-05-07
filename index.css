@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, #000046, #1CB5E0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.display{
+    background-color: #464646;
+    width: 414px;
+    height: 75vh;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.459);
+    box-shadow: inset 0.4px 0.4px 2px rgb(0, 0, 0) ;
+}
+.header-circle{
+    height: 4vh;
+    display: flex;
+    padding: 15px 15px 0 15px;
+
+}
+
+.circle-red{
+    color: #ED685E;
+    margin: 0 0.3vw;
+}
+.circle-red i{
+    font-size:20px;
+}
+.circle-yellow{
+    color: #F4B153;
+    margin: 0 0.3vw;
+}
+.circle-yellow i{
+    font-size: 20px;
+}
+.circle-green{
+    color: #60C354;
+    margin: 0 0.3vw;
+}
+.circle-green i{
+    font-size: 20px;
+}
+.numbers-display{
+    height: 13vh;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin: 0 2vw
+}
+.numbers-display span{
+    color: white;
+    font-size: 2em;
+    font-weight: lighter;
+    margin-bottom: 1vh;
+}
+.numbers-button{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 56vh;
+    border: none;
+
+}
+.numbers-button button{
+    font-size: 30px;
+    cursor: pointer;
+    outline: none;
+    border: 0.1px solid rgba(0, 0, 0, 0.336);
+    color: white;
+    
+}
+.dark-gray{
+    background-color: #464646;
+}
+.dark-gray:hover{
+    background-color: #313131;
+}
+.orange{
+    background-color: #F3A33C;
+}
+.orange:hover{
+    background-color: #bd7f2e;
+}
+.gray{
+    background-color:rgb(161, 161, 161);
+}
+.gray:hover{
+    background-color: rgb(128, 128, 128);
+}
+.clear{
+    grid-area: clear;
+}
+.plus-minus{
+    grid-area: plus-minus;
+}
+.percent{
+    grid-area: percent;
+}
+.division{
+    grid-area: division;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.multiplication{
+    grid-area: multiplication;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;  
+}
+.minus{
+    grid-area: minus;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.plus{
+    grid-area: plus;
+}
+.zero{
+    grid-area: zero;
+    border-radius:0 0 0 10px;
+    
+}
+.equal{
+    grid-area: equal;
+    border-radius: 0 0 10px;
+}
+.point{
+    grid-area: point;
+}
+
+
+section{
+    grid-template-areas: 
+    "clear plus-minus percent division"
+    "seven eight nine multiplication"
+    "four five six minus"
+    "one two three plus"
+    "zero zero point equal"
+    ;
+}
